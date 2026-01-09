@@ -1,6 +1,13 @@
 {
-  "Home": {
-    "title": "Hello Lunna",
-    "cta": "Contact"
+  "Nav": {
+    "brand": "Casa Vella",
+    "menu": "Menu",
+    "about": "About",
+    "rules": "Rules",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "location": "Location",
+    "contact": "Contact",
+    "cta": "Reserve"
   }
 }

@@ -1,6 +1,19 @@
 {
-  "Home": {
-    "title": "Hola Lunna",
-    "cta": "Contactar"
-  }
+  "brand": "A Casa Vella",
+  "Nav": {
+    "menu": "Menú",
+    "about": "Sobre la casa",
+    "rules": "Normas",
+    "gallery": "Galería",
+    "reviews": "Reseñas",
+    "location": "Ubicación",
+    "contact": "Contacto",
+    "cta": "Reservar"
+  },
+  "Hero": {
+    "desc": "Casa turística en Santiago",
+    "explore": "Explorar",
+    "ask": "Disponibilidad"
+  },
+  "cta": "Preguntar"
 }
