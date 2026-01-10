@@ -1,0 +1,21 @@
+import Image, { StaticImageData } from "next/image";
+
+export default async function RuleCard({
+  icon,
+  title,
+  desc,
+}: {
+  icon: StaticImageData;
+  title: string;
+  desc: string;
+}) {
+  return (
+    <div className="border border-zinc-600 p-4 rounded-lg flex gap-4 items-start bg-green-200/5 sm:max-w-sm">
+      <Image src={icon} width={28} alt="icon" className="" />
+      <div className="flex flex-col gap-1">
+        <h5 className="font-bold">{title}</h5>
+        <p className="text-zinc-400">{desc}</p>
+      </div>
+    </div>
+  );
+}
