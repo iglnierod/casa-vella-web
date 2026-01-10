@@ -1,13 +1,19 @@
 {
+  "brand": "A Casa Vella",
   "Nav": {
-    "brand": "Casa Vella",
     "menu": "Menu",
-    "about": "About",
+    "about": "About the house",
     "rules": "Rules",
     "gallery": "Gallery",
     "reviews": "Reviews",
     "location": "Location",
     "contact": "Contact",
-    "cta": "Reserve"
-  }
+    "cta": "Book now"
+  },
+  "Hero": {
+    "desc": "Tourist accommodation in Santiago",
+    "explore": "Explore",
+    "ask": "Availability"
+  },
+  "cta": "Enquire"
 }
