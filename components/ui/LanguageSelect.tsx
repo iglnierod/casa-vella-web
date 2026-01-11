@@ -4,9 +4,9 @@ import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 
 const LOCALES = [
-  { value: "es", label: "ES" },
-  { value: "en", label: "EN" },
-  { value: "pt", label: "PT" },
+  { value: "es", label: "Español" },
+  { value: "en", label: "English" },
+  { value: "pt", label: "Português" },
 ] as const;
 
 export default function LanguageSelect() {

@@ -45,7 +45,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black/40 backdrop-blur supports-backdrop-filter:bg-black/30">
+    <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/40 backdrop-blur supports-backdrop-filter:bg-black/30">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         {/* Brand */}
         <Link
@@ -53,19 +53,13 @@ export default function Navbar() {
           className="flex items-center gap-3 text-white"
           onClick={() => setOpen(false)}
         >
-          <span className="logo-font text-4xl tracking-wider">
-            {t("brand")}
-          </span>
+          <span className="logo-font text-2xl tracking-wider sm:text-4xl">{t("brand")}</span>
         </Link>
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-8 text-sm font-medium text-white/70 md:flex">
           {SECTIONS.map((s) => (
-            <a
-              key={s.key}
-              href={s.href}
-              className="transition-colors hover:text-white"
-            >
+            <a key={s.key} href={s.href} className="transition-colors hover:text-white">
               {t(s.key)}
             </a>
           ))}
@@ -98,12 +92,7 @@ export default function Navbar() {
               aria-controls="mobile-menu"
               onClick={() => setOpen((v) => !v)}
             >
-              <svg
-                className="h-5 w-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden="true"
-              >
+              <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 {open ? (
                   <path
                     d="M6 6l12 12M18 6L6 18"
@@ -132,7 +121,7 @@ export default function Navbar() {
         className={["md:hidden", open ? "block" : "hidden"].join(" ")}
       >
         <div className="mx-auto max-w-6xl px-4 pb-4">
-          <div className="rounded-2xl border border-white/10 bg-black-950/60 p-2 backdrop-blur">
+          <div className="bg-black-950/60 rounded-2xl border border-white/10 p-2 backdrop-blur">
             {SECTIONS.map((s) => (
               <a
                 key={s.key}
